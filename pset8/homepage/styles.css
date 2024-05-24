@@ -1,0 +1,35 @@
+.navbar
+{
+    position: fixed;
+    opacity: 0.95;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-brand
+{
+    font-family: 'Ubuntu', sans-serif;
+    vertical-align: text-top;
+    margin-right:5rem;
+}
+
+.nav-link
+{
+    margin-top: 0.3rem;
+    font-family: 'Rajdhani', sans-serif;
+    color: black;
+}
+
+.form-control
+{
+    margin-top: 0.3rem;
+    font-family: 'Rajdhani', sans-serif;
+    color: green;
+}
+
+.btn
+{
+    margin-top: 0.3rem;
+    font-family: 'Rajdhani', sans-serif;
+    color: green;
+}

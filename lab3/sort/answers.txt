@@ -1,0 +1,20 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Bubble sort is faster than selection sort in the already sorted array because it only needs to check once.
+random10000.txt - 0.499s
+reversed10000.txt - 0.383s
+sorted10000.txt - 0.025s
+
+sort2 uses: Merge Sort
+
+How do you know?: Merge sort is the most effecient because it splits the arrays into halves.
+random10000.txt - 0.038s
+reversed10000.txt - 0.021s
+sorted10000.txt - 0.042s
+
+sort3 uses: Selection Sort
+
+How do you know?: Selection sort is slower than bubble sort in the already sorted array because it has to look at each individual value.
+random10000.txt - 0.322s
+reversed10000.txt - 0.287s
+sorted10000.txt - 0.302s

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+        // TODO: Add code to check answers to questions
+        document.addEventListener("DOMContentLoaded", function() {
+            //let button = document.querySelector("button");
+            document.querySelector("#b").onclick = function() {
+                document.querySelector("#b").style.backgroundColor = "green";
+                document.querySelector("#result").innerHTML = "Correct!";
+            };
+            document.querySelector("#a").onclick = function() {
+                document.querySelector("#a").style.backgroundColor = "red";
+                document.querySelector("#result").innerHTML = "Incorrect";
+            };
+            document.querySelector("#c").onclick = function() {
+                document.querySelector("#c").style.backgroundColor = "red";
+                document.querySelector("#result").innerHTML = "Incorrect";
+            };
+            document.querySelector("#d").onclick = function() {
+                document.querySelector("#d").style.backgroundColor = "red";
+                document.querySelector("#result").innerHTML = "Incorrect";
+            };
+            document.querySelector("#e").onclick = function() {
+                document.querySelector("#e").style.backgroundColor = "red";
+                document.querySelector("#result").innerHTML = "Incorrect";
+            };
+            document.querySelector("#check").addEventListener("click", function() {
+                let input = document.querySelector("input");
+                if (input.value === "Montgomery")
+                {
+                    input.style.backgroundColor = "green";
+                    document.querySelector("#result2").innerHTML = "Correct!";
+                }
+                else
+                {
+                    input.style.backgroundColor = "red";
+                    document.querySelector("#result2").innerHTML = "Incorrect";
+                }
+            });
+        });
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>
+                    <!-- TODO: Add multiple choice question here -->
+                    What is the answer to life the universe and everything?
+                </h3>
+                <button id="a">hello, world</button>
+                <button id="b">42</button>
+                <button id="c">Click Me!</button>
+                <button id="d">abc123</button>
+                <button id="e">Nothing</button>
+
+                <p id="result"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>
+                    <!-- TODO: Add free response question here -->
+                    What is the capital of Alabama?
+                </h3>
+                <input type="text"></input>
+                <button id=check>Check Answer</button>
+
+                <p id="result2"></p>
+
+            </div>
+            <script>
+
+            </script>
+
+        </div>
+    </body>
+</html>
